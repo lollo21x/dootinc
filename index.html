@@ -133,7 +133,7 @@
                     <h3>How we use data</h3>
                     <p>Data provided via contact forms or email is used only to respond to inquiries, provide demos, and improve the service. We do not sell personal data to third parties.</p>
                     <h3>Contact</h3>
-                    <p>Questions: <a href="mailto:info@dootinc.dpdns.org">info@dootinc.dpdns.org</a></p>
+                    <p>Questions: <a href="mailto:support@dootinc.dpdns.org">info@dootinc.dpdns.org</a></p>
                     <p className="text-sm text-gray-500">Last updated: Aug 29, 2025</p>
                 </div>
             );
@@ -147,7 +147,7 @@
                     <h3>Disclaimer</h3>
                     <p>To the extent permitted by law, Doot Inc. disclaims warranties of merchantability and fitness for a particular purpose. Use at your own risk.</p>
                     <h3>Contact</h3>
-                    <p>Questions: <a href="mailto:info@dootinc.dpdns.org">info@dootinc.dpdns.org</a></p>
+                    <p>Questions: <a href="mailto:support@dootinc.dpdns.org">info@dootinc.dpdns.org</a></p>
                     <p className="text-sm text-gray-500">Last updated: Aug 29, 2025</p>
                 </div>
             );
@@ -162,7 +162,7 @@
                                     <p className="mt-6 max-w-xl text-gray-600 text-lg">{L.heroDesc}</p>
                                     <div className="mt-8 flex flex-wrap gap-3">
                                         <a href="#tools" onClick={(e) => { e.preventDefault(); smoothScrollTo('tools') }} className="inline-flex items-center px-5 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-pink-500 text-white font-medium shadow-lg transition-transform hover:scale-105">{L.explore}</a>
-                                        <a href="mailto:info@dootinc.dpdns.org" className="inline-flex items-center px-5 py-3 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 text-gray-800 transition-transform hover:scale-105">{L.contactBtn}</a>
+                                        <a href="mailto:support@dootinc.dpdns.org" className="inline-flex items-center px-5 py-3 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 text-gray-800 transition-transform hover:scale-105">{L.contactBtn}</a>
                                     </div>
                                     <div className="mt-8 text-sm text-gray-500">{L.comingSoon}</div>
                                 </div>
@@ -233,16 +233,15 @@
                             <h3 className="text-2xl font-semibold">{lang === 'en' ? 'Get in touch' : 'Mettiti in contatto'}</h3>
                             <p className="mt-3 text-gray-600">{lang === 'en' ? 'Request a demo or write to our team.' : 'Richiedi una demo o scrivi al nostro team.'}</p>
                             <div className="mt-6 flex items-center justify-center gap-4">
-                                <a href="mailto:info@dootinc.dpdns.org" className="inline-block px-6 py-3 rounded-2xl bg-indigo-600 text-white font-medium transition-transform hover:scale-105">{lang === 'en' ? 'Request demo' : 'Richiedi demo'}</a>
-                                <a href="mailto:info@dootinc.dpdns.org" className="inline-block px-6 py-3 rounded-2xl bg-white/70 border border-gray-200 transition-transform hover:scale-105">{lang === 'en' ? 'Contact sales' : 'Parla con un esperto'}</a>
+                                <a href="mailto:support@dootinc.dpdns.org" className="inline-block px-6 py-3 rounded-2xl bg-indigo-600 text-white font-medium transition-transform hover:scale-105">{lang === 'en' ? 'Request demo' : 'Richiedi demo'}</a>
+                                <a href="mailto:support@dootinc.dpdns.org" className="inline-block px-6 py-3 rounded-2xl bg-white/70 border border-gray-200 transition-transform hover:scale-105">{lang === 'en' ? 'Contact sales' : 'Parla con un esperto'}</a>
                             </div>
                             <footer className="mt-10 bg-white/50 backdrop-blur-sm border-t border-white/30 py-6 rounded-xl">
                                 <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
                                     <div><div className="font-semibold">Doot Inc.</div><div className="text-sm text-gray-600">{L.footerNote}</div></div>
                                     <div className="flex gap-4 items-center">
-                                        <button onClick={() => setPage('privacy')} className="text-sm text-gray-600 hover:underline">Privacy</button>
-                                        <button onClick={() => setPage('terms')} className="text-sm text-gray-600 hover:underline">Terms</button>
-                                        <a href="mailto:info@dootinc.dpdns.org" className="inline-block px-4 py-2 rounded-2xl bg-indigo-600 text-white text-sm transition-transform hover:scale-105">{L.contactBtn}</a>
+                                        <a href="https://privacy.dootinc.dpdns.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:underline">Privacy and terms</a>
+                                        <a href="mailto:support@dootinc.dpdns.org" className="inline-block px-4 py-2 rounded-2xl bg-indigo-600 text-white text-sm transition-transform hover:scale-105">{L.contactBtn}</a>
                                     </div>
                                 </div>
                             </footer>
@@ -258,7 +257,7 @@
                     <header className="fixed top-0 left-0 right-0 z-50 h-20 backdrop-blur-md bg-white/50 border-b border-white/30">
                         <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
                             <div className="flex items-center gap-4 cursor-pointer" onClick={() => handleNavClick('home')}>
-                                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-pink-500 flex items-center justify-center text-white font-bold shadow-md">D</div>
+                                <img src="favicon.png" alt="Doot Inc. Logo" className="w-10 h-10 rounded-xl shadow-md" />
                                 <div className="font-semibold">Doot Inc.</div>
                             </div>
                             <nav className="hidden md:flex items-center gap-6 text-sm text-gray-700">
@@ -266,7 +265,7 @@
                                 <a href="#tools" onClick={(e) => { e.preventDefault(); handleNavClick('tools') }} className="hover:underline">{L.nav.tools}</a>
                                 <a href="#features" onClick={(e) => { e.preventDefault(); handleNavClick('features') }} className="hover:underline">{L.nav.features}</a>
                                 <a href="#contact" onClick={(e) => { e.preventDefault(); handleNavClick('contact') }} className="hover:underline">{L.nav.contact}</a>
-                                <a href="mailto:info@dootinc.dpdns.org" className="ml-4 inline-flex items-center px-4 py-2 rounded-2xl bg-black text-white text-sm">{L.contactBtn}</a>
+                                <a href="mailto:support@dootinc.dpdns.org" className="ml-4 inline-flex items-center px-4 py-2 rounded-2xl bg-black text-white text-sm">{L.contactBtn}</a>
                             </nav>
                             <div className="flex items-center gap-3">
                                 <button aria-label="toggle language" onClick={() => setLang(lang === 'en' ? 'it' : 'en')} className="px-3 py-2 rounded-xl border border-white/30 bg-white/60 backdrop-blur-sm text-sm">{lang === 'en' ? 'IT' : 'EN'}</button>
